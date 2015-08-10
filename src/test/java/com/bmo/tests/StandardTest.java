@@ -14,7 +14,8 @@ public class StandardTest extends BaseTest {
 		 System.out.println(device.getTags());
 		StandardPage standardPage = common.entryPoint()
 									.waitForAlert()
-									.enterCutomerInformation();
+									.enterCutomerInformation()
 									.enterFinancialInformation();
 		//Assert.assertTrue(standardPage.getStandardPageLoaded(), "Standard Page is not loaded");
 	}
+}

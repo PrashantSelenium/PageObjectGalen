@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="3" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="215527" started-at="2015-08-10T11:54:19Z" finished-at="2015-08-10T11:57:54Z">
+  <suite name="Default suite" duration-ms="242929" started-at="2015-08-10T12:13:31Z" finished-at="2015-08-10T12:17:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="215527" started-at="2015-08-10T11:54:19Z" finished-at="2015-08-10T11:57:54Z">
+    <test name="Default test" duration-ms="242929" started-at="2015-08-10T12:13:31Z" finished-at="2015-08-10T12:17:34Z">
       <class name="com.bmo.tests.StandardTest">
-        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="createDriver" is-config="true" duration-ms="4202" started-at="2015-08-10T17:24:19Z" finished-at="2015-08-10T17:24:23Z">
+        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="createDriver" is-config="true" duration-ms="4863" started-at="2015-08-10T17:43:31Z" finished-at="2015-08-10T17:43:36Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="FAIL" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="testApp" duration-ms="68046" started-at="2015-08-10T17:24:23Z" data-provider="devices" finished-at="2015-08-10T17:25:31Z">
+        <test-method status="FAIL" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="testApp" duration-ms="78355" started-at="2015-08-10T17:43:36Z" data-provider="devices" finished-at="2015-08-10T17:44:54Z">
           <params>
             <param index="0">
               <value>
@@ -31,23 +31,23 @@
               <![CDATA[element not visible
   (Session info: chrome=44.0.2403.130)
   (Driver info: chromedriver=2.10.267518,platform=Linux 3.16.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 43 milliseconds
+Command duration or timeout: 51 milliseconds
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'galeqa-VirtualBox', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-45-generic', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.HJlJmm}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e949e7df854cc160dca6878845d0e88d]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.bgvwfl}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ac14becb5ddddad37e82d62fa0a68e55]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=44.0.2403.130)
   (Driver info: chromedriver=2.10.267518,platform=Linux 3.16.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 43 milliseconds
+Command duration or timeout: 51 milliseconds
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'galeqa-VirtualBox', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-45-generic', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.HJlJmm}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e949e7df854cc160dca6878845d0e88d
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.bgvwfl}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ac14becb5ddddad37e82d62fa0a68e55
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -57,8 +57,8 @@ Session ID: e949e7df854cc160dca6878845d0e88d
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.bmo.pages.StandardPage.enterCutomerInformation(StandardPage.java:128)
-	at com.bmo.tests.StandardTest.testApp(StandardTest.java:17)
+	at com.bmo.pages.StandardPage.enterFinancialInformation(StandardPage.java:133)
+	at com.bmo.tests.StandardTest.testApp(StandardTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,11 +89,11 @@ Session ID: e949e7df854cc160dca6878845d0e88d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="quitDriver" is-config="true" duration-ms="572" started-at="2015-08-10T17:25:31Z" finished-at="2015-08-10T17:25:32Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="quitDriver" is-config="true" duration-ms="570" started-at="2015-08-10T17:44:54Z" finished-at="2015-08-10T17:44:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="createDriver" is-config="true" duration-ms="3046" started-at="2015-08-10T17:25:32Z" finished-at="2015-08-10T17:25:35Z">
+        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="createDriver" is-config="true" duration-ms="3333" started-at="2015-08-10T17:44:55Z" finished-at="2015-08-10T17:44:58Z">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@ Session ID: e949e7df854cc160dca6878845d0e88d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="FAIL" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="testApp" duration-ms="68025" started-at="2015-08-10T17:25:35Z" data-provider="devices" finished-at="2015-08-10T17:26:43Z">
+        <test-method status="FAIL" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="testApp" duration-ms="70983" started-at="2015-08-10T17:44:58Z" data-provider="devices" finished-at="2015-08-10T17:46:09Z">
           <params>
             <param index="0">
               <value>
@@ -117,23 +117,23 @@ Session ID: e949e7df854cc160dca6878845d0e88d
               <![CDATA[element not visible
   (Session info: chrome=44.0.2403.130)
   (Driver info: chromedriver=2.10.267518,platform=Linux 3.16.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 56 milliseconds
+Command duration or timeout: 41 milliseconds
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'galeqa-VirtualBox', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-45-generic', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.JsVnwk}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 43b29f80fd881fba950d8180dabd4be9]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.7fLO4u}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 438a0085746bcb4229b4db2641a70219]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=44.0.2403.130)
   (Driver info: chromedriver=2.10.267518,platform=Linux 3.16.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 56 milliseconds
+Command duration or timeout: 41 milliseconds
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'galeqa-VirtualBox', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-45-generic', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.JsVnwk}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 43b29f80fd881fba950d8180dabd4be9
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.7fLO4u}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 438a0085746bcb4229b4db2641a70219
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -143,8 +143,8 @@ Session ID: 43b29f80fd881fba950d8180dabd4be9
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.bmo.pages.StandardPage.enterCutomerInformation(StandardPage.java:128)
-	at com.bmo.tests.StandardTest.testApp(StandardTest.java:17)
+	at com.bmo.pages.StandardPage.enterFinancialInformation(StandardPage.java:133)
+	at com.bmo.tests.StandardTest.testApp(StandardTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,11 +175,11 @@ Session ID: 43b29f80fd881fba950d8180dabd4be9
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="quitDriver" is-config="true" duration-ms="571" started-at="2015-08-10T17:26:43Z" finished-at="2015-08-10T17:26:43Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="quitDriver" is-config="true" duration-ms="613" started-at="2015-08-10T17:46:09Z" finished-at="2015-08-10T17:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="createDriver" is-config="true" duration-ms="2964" started-at="2015-08-10T17:26:43Z" finished-at="2015-08-10T17:26:46Z">
+        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="createDriver" is-config="true" duration-ms="3262" started-at="2015-08-10T17:46:10Z" finished-at="2015-08-10T17:46:13Z">
           <params>
             <param index="0">
               <value>
@@ -190,7 +190,7 @@ Session ID: 43b29f80fd881fba950d8180dabd4be9
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method status="FAIL" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="testApp" duration-ms="67381" started-at="2015-08-10T17:26:46Z" data-provider="devices" finished-at="2015-08-10T17:27:54Z">
+        <test-method status="FAIL" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="testApp" duration-ms="80228" started-at="2015-08-10T17:46:13Z" data-provider="devices" finished-at="2015-08-10T17:47:33Z">
           <params>
             <param index="0">
               <value>
@@ -203,23 +203,23 @@ Session ID: 43b29f80fd881fba950d8180dabd4be9
               <![CDATA[element not visible
   (Session info: chrome=44.0.2403.130)
   (Driver info: chromedriver=2.10.267518,platform=Linux 3.16.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 47 milliseconds
+Command duration or timeout: 52 milliseconds
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'galeqa-VirtualBox', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-45-generic', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.0qiUqf}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 832cf8e8cf018f81112a68046e8de141]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.bAEZRM}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3cb39ce8f5434b350b6ff9095a184a41]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=44.0.2403.130)
   (Driver info: chromedriver=2.10.267518,platform=Linux 3.16.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 47 milliseconds
+Command duration or timeout: 52 milliseconds
 Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
 System info: host: 'galeqa-VirtualBox', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.16.0-45-generic', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.0qiUqf}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 832cf8e8cf018f81112a68046e8de141
+Capabilities [{applicationCacheEnabled=false, rotatable=false, chrome={userDataDir=/tmp/.com.google.Chrome.bAEZRM}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=44.0.2403.130, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3cb39ce8f5434b350b6ff9095a184a41
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -229,8 +229,8 @@ Session ID: 832cf8e8cf018f81112a68046e8de141
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.bmo.pages.StandardPage.enterCutomerInformation(StandardPage.java:128)
-	at com.bmo.tests.StandardTest.testApp(StandardTest.java:17)
+	at com.bmo.pages.StandardPage.enterFinancialInformation(StandardPage.java:133)
+	at com.bmo.tests.StandardTest.testApp(StandardTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -261,7 +261,7 @@ Session ID: 832cf8e8cf018f81112a68046e8de141
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="quitDriver" is-config="true" duration-ms="610" started-at="2015-08-10T17:27:54Z" finished-at="2015-08-10T17:27:54Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@3ac3fd8b]" name="quitDriver" is-config="true" duration-ms="639" started-at="2015-08-10T17:47:33Z" finished-at="2015-08-10T17:47:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
