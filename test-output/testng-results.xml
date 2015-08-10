@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="77073" started-at="2015-08-10T04:00:53Z" finished-at="2015-08-10T04:02:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="77073" started-at="2015-08-10T04:00:53Z" finished-at="2015-08-10T04:02:10Z">
+      <class name="com.bmo.tests.StandardTest">
+        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="createDriver" is-config="true" duration-ms="2901" started-at="2015-08-10T09:30:53Z" finished-at="2015-08-10T09:30:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3012646b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="testApp" duration-ms="21983" started-at="2015-08-10T09:30:56Z" data-provider="devices" finished-at="2015-08-10T09:31:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.bmo.common.BaseTest$TestDevice@186f8716]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="quitDriver" is-config="true" duration-ms="565" started-at="2015-08-10T09:31:18Z" finished-at="2015-08-10T09:31:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="createDriver" is-config="true" duration-ms="2536" started-at="2015-08-10T09:31:18Z" finished-at="2015-08-10T09:31:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4a883b15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="testApp" duration-ms="22806" started-at="2015-08-10T09:31:21Z" data-provider="devices" finished-at="2015-08-10T09:31:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.bmo.common.BaseTest$TestDevice@37654521]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="quitDriver" is-config="true" duration-ms="559" started-at="2015-08-10T09:31:44Z" finished-at="2015-08-10T09:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="createDriver([Ljava.lang.Object;)[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="createDriver" is-config="true" duration-ms="2560" started-at="2015-08-10T09:31:44Z" finished-at="2015-08-10T09:31:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@25641d39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method status="PASS" signature="testApp(com.bmo.common.BaseTest$TestDevice)[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="testApp" duration-ms="22582" started-at="2015-08-10T09:31:47Z" data-provider="devices" finished-at="2015-08-10T09:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.bmo.common.BaseTest$TestDevice@22ef9844]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.bmo.tests.StandardTest@71be98f5]" name="quitDriver" is-config="true" duration-ms="566" started-at="2015-08-10T09:32:09Z" finished-at="2015-08-10T09:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.bmo.tests.StandardTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
