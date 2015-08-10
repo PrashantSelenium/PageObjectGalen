@@ -102,6 +102,11 @@ public class StandardPage extends Common {
         Thread.sleep(5000);
         waitForElement(fi_employment_status);
         Thread.sleep(3000);
+        return new StandardPage();
+	}
+	
+	public StandardPage enterFinancialInformation() throws InterruptedException {
+        
         Select dropdown_employment_status = new Select (driver.findElement(fi_employment_status));
         dropdown_employment_status.selectByValue("2");
         Select dropdown_fi_occupation = new Select (driver.findElement(fi_occupation));
@@ -136,16 +141,7 @@ public class StandardPage extends Common {
         driver.findElement(additional_option_complete_button).click();
         
         Thread.sleep(5000);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Thread.sleep(10000);
 		return new StandardPage();
 	}
+
 }
