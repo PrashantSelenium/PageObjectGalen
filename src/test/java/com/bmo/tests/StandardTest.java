@@ -1,18 +1,17 @@
 package com.bmo.tests;
 
+import java.io.IOException;
+
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.bmo.common.BaseTest;
-import com.bmo.pages.Common;
 import com.bmo.pages.StandardPage;
 
-public class StandardTest extends BaseTest {
-	Common common= new Common();
-
+public class StandardTest extends StandardPage {
 	 @Test(dataProvider = "devices")
-	public void testApp(TestDevice device) throws InterruptedException {
-		 System.out.println(device.getTags());
-		StandardPage standardPage = common.entryPoint()
+	public void testApp(TestDevice testDevice) throws InterruptedException, IOException {
+		 Reporter.log( testDevice.getName(), true );
+		StandardPage standardPage = entryPoint()
 									.waitForAlert()
 									.enterCutomerInformation();
 		//Assert.assertTrue(standardPage.getStandardPageLoaded(), "Standard Page is not loaded");
