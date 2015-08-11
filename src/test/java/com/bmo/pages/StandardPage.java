@@ -95,7 +95,7 @@ public class StandardPage extends Common {
 	}
 
 	public StandardPage enterCutomerInformation() throws InterruptedException {
-		driver.findElement(Customer_Email).sendKeys("Testing@gmail.com");
+		//driver.findElement(Customer_Email).sendKeys("Testing@gmail.com");
 		driver.findElement(Customer_First_Name).sendKeys("TestingFirst");
 		driver.findElement(Customer_Middle_Name).sendKeys("M");
 		driver.findElement(Customer_Last_Name).sendKeys("TestingLast");
@@ -168,6 +168,12 @@ public class StandardPage extends Common {
         Thread.sleep(5000);
 
 		return new StandardPage();
+	}
+	
+	
+	public Boolean getEditButtonDisplayed(){
+		Boolean editButton = driver.findElement(By.id("guideContainer-rootPanel-accordioncontainer___button_next")).isDisplayed();
+		return editButton;
 	}
 
 }
