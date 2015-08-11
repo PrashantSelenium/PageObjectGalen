@@ -13,7 +13,8 @@ public class StandardTest extends StandardPage {
 		 Reporter.log( testDevice.getName(), true );
 		StandardPage standardPage = entryPoint()
 									.waitForAlert()
-									.enterCutomerInformation();
+									.enterCutomerInformation()
+									.enterFinancialInformation();
 		//Assert.assertTrue(standardPage.getStandardPageLoaded(), "Standard Page is not loaded");
 	}
 }
