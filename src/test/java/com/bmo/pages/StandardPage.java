@@ -136,7 +136,7 @@ public class StandardPage extends Common {
         dropdown_employment_status.selectByValue("2");
         Select dropdown_fi_occupation = new Select (driver.findElement(fi_occupation));
         dropdown_fi_occupation.selectByValue("1");
-        driver.findElement(fi_employer_name).sendKeys("MyCompany");
+        driver.findElement(fi_employer_name).sendKeys("MyComp");
         driver.findElement(fi_employee_since_month).sendKeys("February");
         driver.findElement(fi_employee_since_year).sendKeys("2000");
         driver.findElement(fi_work_address_street_number).sendKeys("98");
