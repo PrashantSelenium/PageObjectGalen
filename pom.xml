@@ -18,11 +18,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>net.mindengine</groupId>
-			<artifactId>galen</artifactId>
-			<version>1.6.4</version>
-		</dependency>
-		<dependency>
 			<groupId>com.galenframework</groupId>
 			<artifactId>galen-java-support</artifactId>
 			<version>2.0.3</version>

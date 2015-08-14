@@ -1,12 +1,13 @@
 package com.bmo.common;
 
-import net.mindengine.galen.reports.GalenTestInfo;
-import net.mindengine.galen.reports.HtmlReportBuilder;
+import java.util.List;
+
 import org.testng.IReporter;
 import org.testng.ISuite;
 import org.testng.xml.XmlSuite;
 
-import java.util.List;
+import com.galenframework.reports.GalenTestInfo;
+import com.galenframework.reports.HtmlReportBuilder;
 
 public class GalenReportingListener implements IReporter {
 

@@ -2,65 +2,42 @@ package com.bmo.common;
 
 import static java.util.Arrays.asList;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.List;
-import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.DataProvider;
 
-import net.mindengine.galen.api.Galen;
-import net.mindengine.galen.reports.TestReport;
-import net.mindengine.galen.reports.model.LayoutReport;
+import com.bmo.pages.Common;
+import com.galenframework.testng.GalenTestNgTestBase;
 
-public class BaseTest {
+public class BaseTest extends GalenTestNgTestBase{
 
-	public static WebDriver driver;
-	ThreadLocal<TestReport> report = new ThreadLocal<TestReport>();
-
-	public void checkLayout(WebDriver driver, String specPath, List<String> includedTags) throws IOException {
-		String title = "Check layout " + specPath;
-		LayoutReport layoutReport = Galen.checkLayout(driver, specPath, includedTags, null, new Properties(), null);
-		report.get().layout(layoutReport, title);
-		if (layoutReport.errors() > 0) {
-			throw new RuntimeException("Incorrect layout: " + title);
-		}
-	}
-
-	@BeforeMethod
-	public void initReport(Method method) {
-		report.set(GalenReportsContainer.get().registerTest(method));
-	}
-
-	@BeforeMethod
-	public void createDriver(Object[] args) {
-		driver = new ChromeDriver();
-		driver.get("http://ec2-52-24-99-104.us-west-2.compute.amazonaws.com/content/forms/af/bmo/wl/entry.html");
-		if (args.length > 0) {
-			if (args[0] != null && args[0] instanceof TestDevice) {
-				TestDevice device = (TestDevice) args[0];
-				if (device.getScreenSize() != null) {
-					System.out.println("*****" + device.name);
-					driver.manage().window().setSize(device.getScreenSize());
-				}
-			}
-		}
-	}
-
-	@AfterMethod
-	public void quitDriver() {
-		driver.quit();
-	}
-
+	//public static WebDriver driver;
+	protected Common common = new Common();
+    public String ENV_URL="http://ec2-52-24-99-104.us-west-2.compute.amazonaws.com/content/forms/af/bmo/wl/entry.html";
+    
+    @Override
+    public WebDriver createDriver(Object[] args) {
+    	WebDriver driver = new FirefoxDriver();
+        if (args.length > 0) {
+            if (args[0] != null && args[0] instanceof TestDevice) {
+                TestDevice device = (TestDevice)args[0];
+                if (device.getScreenSize() != null) {
+                    driver.manage().window().setSize(device.getScreenSize());
+                }
+            }
+        }
+        return driver;
+    }
+	   public void loadUrl(String uri) {
+	        load(ENV_URL + uri);
+	    }
 	@DataProvider(name = "devices")
-	public Object[][] devices() {
+	public static Object[][] devices() {
 		return new Object[][] { { new TestDevice("mobile", new Dimension(450, 800), asList("mobile")) },
 				{ new TestDevice("tablet", new Dimension(750, 800), asList("tablet")) },
 				{ new TestDevice("desktop", new Dimension(1024, 1000), asList("desktop")) } };
@@ -98,7 +75,7 @@ public class BaseTest {
 	}
 
 	public WebElement dr(By by) {
-		return driver.findElement(by);
+		return getDriver().findElement(by);
 
 	}
 }

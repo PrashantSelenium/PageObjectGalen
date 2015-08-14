@@ -1,11 +1,8 @@
-==========================================================
-sign-in      id     customerSignIn__buttonWrapper
-cust_title	 id 	customerSignIn__title
-==========================================================
+@objects
+  sign-in      id   customerSignIn__buttonWrapper
+  cust_title   id   customerSignIn__title
 
-
-@ ^ | mobile
-------------------------
-sign-in
-    height: 76 px
-  
+= Section name =
+   @on mobile
+     sign-in:
+      height 76 px

@@ -6,9 +6,6 @@
       <class name="com.bmo.tests.StandardTest">
         <methods>
           <include name="testApp" invocation-numbers="0 1 2"/>
-          <include name="createDriver"/>
-          <include name="initReport"/>
-          <include name="quitDriver"/>
         </methods>
       </class> <!-- com.bmo.tests.StandardTest -->
     </classes>

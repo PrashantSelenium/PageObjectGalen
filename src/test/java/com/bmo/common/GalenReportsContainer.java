@@ -4,8 +4,8 @@ import java.lang.reflect.Method;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.mindengine.galen.reports.GalenTestInfo;
-import net.mindengine.galen.reports.TestReport;
+import com.galenframework.reports.GalenTestInfo;
+import com.galenframework.reports.TestReport;
 
 public class GalenReportsContainer {
 
