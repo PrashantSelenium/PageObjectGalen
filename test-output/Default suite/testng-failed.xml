@@ -5,7 +5,8 @@
     <classes>
       <class name="com.bmo.tests.StandardTest">
         <methods>
-          <include name="testApp" invocation-numbers="0 1 2"/>
+          <include name="testApp"/>
+          <include name="createDriver"/>
         </methods>
       </class> <!-- com.bmo.tests.StandardTest -->
     </classes>

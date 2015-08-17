@@ -4,15 +4,13 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class StandardPage extends Common {
-	
-	public StandardPage(WebDriver driver){
-		this.getDriver();
-	}
+import com.bmo.common.BaseTest;
+import com.bmo.common.GalenTestBase;
+
+public class StandardPage extends GalenTestBase {
 	
 	By Customer_First_Name = By
 			.id("guideContainer-rootPanel-accordioncontainer-yourName1434555782280-firstName___widget");
@@ -100,12 +98,12 @@ public class StandardPage extends Common {
 	public StandardPage waitForAlert() {
 		// waitForElement(Accept_Label);
 		getDriver().findElement(Accept_Label).click();
-		return new StandardPage(getDriver());
+		return new StandardPage();
 	}
 
 	public StandardPage checkScreen(String specPath, List<String> includedTags) throws IOException {
 		checkLayout(specPath, includedTags);
-		return new StandardPage(getDriver());
+		return new StandardPage();
 	}
 
 	public boolean getStandardPageLoaded() {
@@ -146,7 +144,7 @@ public class StandardPage extends Common {
 		Thread.sleep(5000);
 		waitForElement(fi_employment_status);
 		Thread.sleep(3000);
-		return new StandardPage(getDriver());
+		return new StandardPage();
 	}
 
 	public StandardPage enterFinancialInformation() throws InterruptedException {
@@ -186,7 +184,7 @@ public class StandardPage extends Common {
 
 		Thread.sleep(5000);
 
-		return new StandardPage(getDriver());
+		return new StandardPage();
 	}
 
 	public Boolean getEditButtonDisplayed() {
