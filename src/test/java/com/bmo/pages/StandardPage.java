@@ -1,16 +1,17 @@
 package com.bmo.pages;
 
-import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.bmo.common.BaseTest;
-import com.bmo.common.GalenTestBase;
+import com.bmo.common.Common;
 
-public class StandardPage extends GalenTestBase {
+public class StandardPage{
+	
+
 	
 	By Customer_First_Name = By
 			.id("guideContainer-rootPanel-accordioncontainer-yourName1434555782280-firstName___widget");
@@ -95,102 +96,102 @@ public class StandardPage extends GalenTestBase {
 	By additional_option_complete_button = By
 			.id("guideContainer-rootPanel-accordioncontainer_292387304___button_complete");
 
-	public StandardPage waitForAlert() {
-		// waitForElement(Accept_Label);
-		getDriver().findElement(Accept_Label).click();
+	public StandardPage waitForAlert(WebDriver driver) {
+		 Common.waitForElement(Accept_Label,driver);
+		driver.findElement(Accept_Label).click();
 		return new StandardPage();
 	}
 
-	public StandardPage checkScreen(String specPath, List<String> includedTags) throws IOException {
-		checkLayout(specPath, includedTags);
-		return new StandardPage();
-	}
 
-	public boolean getStandardPageLoaded() {
-		WebElement el = getDriver().findElement(By.id("signIn_link"));
+
+	public boolean getStandardPageLoaded(WebDriver driver) {
+		WebElement el = driver.findElement(By.id("signIn_link"));
 		return el.isDisplayed();
 	}
 
-	public StandardPage enterCutomerInformation() throws InterruptedException {
-		// getDriver().findElement(Customer_Email).sendKeys("Testing@gmail.com");
-		getDriver().findElement(Customer_First_Name).sendKeys("TestingFirst");
-		getDriver().findElement(Customer_Middle_Name).sendKeys("M");
-		getDriver().findElement(Customer_Last_Name).sendKeys("TestingLast");
-		getDriver().findElement(Customer_Title).sendKeys("Mr.");
-		getDriver().findElement(Date).sendKeys("10");
-		getDriver().findElement(Month).sendKeys("January");
-		getDriver().findElement(Year).sendKeys("1950");
-		// getDriver().findElement(Customer_home_Address).sendKeys("M4B 1B7");
-		getDriver().findElement(SIN).sendKeys("793 526 914");
-		getDriver().findElement(Home_add_street).sendKeys("12");
-		getDriver().findElement(Home_add_street_name).sendKeys("street");
-		getDriver().findElement(Home_add_apt).sendKeys("34");
-		getDriver().findElement(Home_add_city).sendKeys("Toronto");
-		getDriver().findElement(Home_add_province).sendKeys("ON");
-		getDriver().findElement(Home_add_postcode).sendKeys("M4B 1B7");
+	public StandardPage enterCutomerInformation(WebDriver driver) throws InterruptedException {
+		// driver.findElement(Customer_Email).sendKeys("Testing@gmail.com");
+		driver.findElement(Customer_First_Name).sendKeys("TestingFirst");
+		driver.findElement(Customer_Middle_Name).sendKeys("M");
+		driver.findElement(Customer_Last_Name).sendKeys("TestingLast");
+		driver.findElement(Customer_Title).sendKeys("Mr.");
+		driver.findElement(Date).sendKeys("10");
+		driver.findElement(Month).sendKeys("January");
+		driver.findElement(Year).sendKeys("1950");
+		// driver.findElement(Customer_home_Address).sendKeys("M4B 1B7");
+		driver.findElement(SIN).sendKeys("793 526 914");
+		driver.findElement(Home_add_street).sendKeys("12");
+		driver.findElement(Home_add_street_name).sendKeys("street");
+		driver.findElement(Home_add_apt).sendKeys("34");
+		driver.findElement(Home_add_city).sendKeys("Toronto");
+		driver.findElement(Home_add_province).sendKeys("ON");
+		driver.findElement(Home_add_postcode).sendKeys("M4B 1B7");
 
-		waitForElement(By.xpath(".//*[@id='bmoContainer']/div[5]/div[4]/div[2]/div[1]"));
+		Common.waitForElement(By.xpath(".//*[@id='bmoContainer']/div[5]/div[4]/div[2]/div[1]"),driver);
 
-		getDriver().findElement(By.xpath(".//*[@id='bmoContainer']/div[5]/div[4]/div[2]/div[1]")).click();
-		getDriver().findElement(Customer_Phone_Number).sendKeys("(121) 123-1231");
-		getDriver().findElement(Email).sendKeys("Test@gmail.com");
-		Select dropdown = new Select(getDriver().findElement(Rent));
+		driver.findElement(By.xpath(".//*[@id='bmoContainer']/div[5]/div[4]/div[2]/div[1]")).click();
+		driver.findElement(Customer_Phone_Number).sendKeys("(121) 123-1231");
+		driver.findElement(Email).sendKeys("Test@gmail.com");
+		Select dropdown = new Select(driver.findElement(Rent));
 		dropdown.selectByValue("1");
-		getDriver().findElement(Rent_Mortgage).sendKeys("30000");
-		getDriver().findElement(Lived_Since_Month).sendKeys("January");
-		getDriver().findElement(Lived_Since_Year).sendKeys("2010");
+		driver.findElement(Rent_Mortgage).sendKeys("30000");
+		driver.findElement(Lived_Since_Month).sendKeys("January");
+		driver.findElement(Lived_Since_Year).sendKeys("2010");
 		Thread.sleep(3000);
-		getDriver().findElement(Next_button).click();
+		driver.findElement(Next_button).click();
 		Thread.sleep(5000);
-		waitForElement(fi_employment_status);
+		Common.waitForElement(fi_employment_status,driver);
 		Thread.sleep(3000);
 		return new StandardPage();
 	}
 
-	public StandardPage enterFinancialInformation() throws InterruptedException {
+	public StandardPage enterFinancialInformation(WebDriver driver) throws InterruptedException {
 
-		Select dropdown_employment_status = new Select(getDriver().findElement(fi_employment_status));
+		Select dropdown_employment_status = new Select(driver.findElement(fi_employment_status));
 		dropdown_employment_status.selectByValue("2");
-		Select dropdown_fi_occupation = new Select(getDriver().findElement(fi_occupation));
+		Select dropdown_fi_occupation = new Select(driver.findElement(fi_occupation));
 		dropdown_fi_occupation.selectByValue("1");
-		getDriver().findElement(fi_employer_name).sendKeys("MyCompany");
-		getDriver().findElement(fi_employee_since_month).sendKeys("February");
-		getDriver().findElement(fi_employee_since_year).sendKeys("2000");
-		getDriver().findElement(fi_work_address_street_number).sendKeys("98");
-		getDriver().findElement(fi_work_address_street_name).sendKeys("FrontStreet");
-		getDriver().findElement(fi_work_address_apt).sendKeys("3");
-		getDriver().findElement(fi_work_address_city).sendKeys("Toronto");
-		getDriver().findElement(fi_work_address_province).sendKeys("ON");
-		getDriver().findElement(fi_work_address_postcode).sendKeys("M5V 3S8");
-		getDriver().findElement(fi_workphone_number).sendKeys("(343) 344-3433");
-		getDriver().findElement(fi_workphone_number_ext).sendKeys("765");
-		getDriver().findElement(fi_Employment_income).sendKeys("1234");
-		getDriver().findElement(fi_otherhousehold_income).sendKeys("876");
-		Select dropdown_fi_otherhousehold_income = new Select(getDriver().findElement(fi_otherhousehold_income_option));
+		driver.findElement(fi_employer_name).sendKeys("MyCompany");
+		driver.findElement(fi_employee_since_month).sendKeys("February");
+		driver.findElement(fi_employee_since_year).sendKeys("2000");
+		driver.findElement(fi_work_address_street_number).sendKeys("98");
+		driver.findElement(fi_work_address_street_name).sendKeys("FrontStreet");
+		driver.findElement(fi_work_address_apt).sendKeys("3");
+		driver.findElement(fi_work_address_city).sendKeys("Toronto");
+		driver.findElement(fi_work_address_province).sendKeys("ON");
+		driver.findElement(fi_work_address_postcode).sendKeys("M5V 3S8");
+		driver.findElement(fi_workphone_number).sendKeys("(343) 344-3433");
+		driver.findElement(fi_workphone_number_ext).sendKeys("765");
+		driver.findElement(fi_Employment_income).sendKeys("1234");
+		driver.findElement(fi_otherhousehold_income).sendKeys("876");
+		Select dropdown_fi_otherhousehold_income = new Select(driver.findElement(fi_otherhousehold_income_option));
 		dropdown_fi_otherhousehold_income.selectByValue("1");
-		Select dropdown_fi_typeofaccount = new Select(getDriver().findElement(fi_typeofaccount));
+		Select dropdown_fi_typeofaccount = new Select(driver.findElement(fi_typeofaccount));
 		dropdown_fi_typeofaccount.selectByValue("3");
-		Select dropdown_fi_bankname = new Select(getDriver().findElement(fi_bankname));
+		Select dropdown_fi_bankname = new Select(driver.findElement(fi_bankname));
 		dropdown_fi_bankname.selectByValue("2");
-		getDriver().findElement(fi_termsncondition).click();
-		getDriver().findElement(fi_next_button).click();
+		driver.findElement(fi_termsncondition).click();
+		driver.findElement(fi_next_button).click();
 
 		Thread.sleep(5000);
 
-		waitForElement(additional_option_complete_button);
+		Common.waitForElement(additional_option_complete_button,driver);
 		Thread.sleep(5000);
 
-		getDriver().findElement(additional_option_complete_button).click();
+		driver.findElement(additional_option_complete_button).click();
 
 		Thread.sleep(5000);
 
 		return new StandardPage();
 	}
 
-	public Boolean getEditButtonDisplayed() {
-		Boolean editButton = getDriver().findElement(By.id("guideContainer-rootPanel-accordioncontainer___button_next"))
+	public Boolean getEditButtonDisplayed(WebDriver driver) {
+		Boolean editButton = driver.findElement(By.id("guideContainer-rootPanel-accordioncontainer___button_next"))
 				.isDisplayed();
 		return editButton;
 	}
+
+
+
 
 }

@@ -52,7 +52,8 @@ public class BaseTest{
 	public static Object[][] devices() {
 		return new Object[][] { { new TestDevice("mobile", new Dimension(450, 800), asList("mobile")) },
 				{ new TestDevice("tablet", new Dimension(750, 800), asList("tablet")) },
-				{ new TestDevice("desktop", new Dimension(1024, 1000), asList("desktop")) } };
+				{ new TestDevice("desktop", new Dimension(1024, 1000), asList("desktop")) },
+				};
 	}
 
 	public static class TestDevice {
